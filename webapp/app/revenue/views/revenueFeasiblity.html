@@ -1,0 +1,350 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="row feasibility-head-div">
+        <div class="row head-content">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                <label>12 Townhouses</label>
+                <p>52-53 Caswell Street, East Brisbane, QLD 4169 &nbsp;
+                <span class="text-blue cursor-pointer" ng-click="revenueCtrl.isToEdit = !revenueCtrl.isToEdit;">
+                    <i id="sort-desc" ng-show="!revenueCtrl.isToEdit" class="fa fa-sort-desc"></i><i ng-show="revenueCtrl.isToEdit" id="sort-asc" class="fa fa-sort-asc"></i>&nbsp; Edit Address </span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12 pull-left">
+                <button class="btn btn-default feasable-btn-blue"
+                    data-toggle="modal" data-target="#new-feasbale-modal">
+                    Delete Feasiblity
+                </button>
+                <button class="btn btn-default feasable-btn-blue"
+                    data-toggle="modal" data-target="#new-feasbale-modal">
+                    Save
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="address-div" class="row address-div" ng-show="revenueCtrl.isToEdit">
+        <div class="row address-head">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
+                <div class="row pad-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="" class="pull-left text-left">Project Name</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="pull-left text-left" value="12 Townhouses" />
+                    </div>
+                </div>
+                <div class="row pad-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="" class="pull-left text-left">Address Line 1</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input type="text" class="pull-left text-left" value="52-53 CasWell Street" />
+                    </div>
+                </div>
+                <div class="row pad-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="" class="pull-left text-left">Address Line 2</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="pull-left text-left" value="East Brisbane" />
+                    </div>
+                </div>
+                <div class="row pad-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="" class="pull-left text-left">State</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <input type="text" class="pull-left text-left" value="Queensland" />
+                    </div>
+                </div>
+                <div class="row pad-5">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <label for="" class="pull-left text-left">Post Code</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <input type="text" class="pull-left text-left" value="QLD 4169" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="pull-right">
+                        <button class="btn btn-default feasable-btn-blue">Update</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-sx-12">
+
+            </div>
+        </div>
+    </div>
+    <div class="row revenue-margin">
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 revenue-form-layout">
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left text-black">Description</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-right text-right  text-black">Amount</label>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Land value</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="685000.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">% of Stamp Duty</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-percent formIcon text-blue"></i>
+                   <input type="text" class="pull-right text-right" value="6.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Stamp Duty Cost</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <p type="text" class="pull-right text-right" value="">41,100.00</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="row total-div">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label for="" class="pull-left text-left text-black">Total Acquisiton Cost</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <i class="fa fa-usd formIcon text-black"></i>
+                        <p type="text"  class="righ text-right text-black" value="">726100.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Total No. of Units</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="pull-right text-right" value="4" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Land value TH/Units</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">181525.00</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Total Const. Area</label>
+                    <i class="pull-left fa fa-calculator fa-lg cursor-pointer"></i>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <input type="text" class="pull-right text-right" value="145.00 m2" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Cost/m2</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="1500.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="row total-div">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label for="" class="pull-left text-left text-black">Total Construction Cost</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <i class="fa fa-usd formIcon text-black"></i>
+                        <p type="text" class="pull-right text-right text-black" value="">217500.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 revenue-form-layout">
+             <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left text-black">Cost Heads</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-right text-right text-black">Amount</label>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">GRV (Sales Value)</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="685,000.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Consultants</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="15,000.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Misellaneous</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="10,000.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Finance</label>
+                    <i class="pull-left fa fa-calculator  fa-lg cursor-pointer"></i>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="20,475.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Target DM%</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-percent formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="20.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Margin Scheme</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label class="radio-inline pull-right"><input type="radio" name="optradio">No</label>
+                    <label class="radio-inline pull-right"><input type="radio" name="optradio">Yes</label>
+                </div>
+
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Land Value/Unit</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">181,525.00</p>
+                </div>
+                
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">GST</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">18,077.27</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">% of Total Const. Cost</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-percent formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="5.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Construction With Cont.</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">228,375.00</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">% of Land value/Unit</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-percent formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="4.00" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">Council Contributions</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">7,261.00</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <label for="" class="pull-left text-left">% of GRV (Sale Value)</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-percent formIcon text-blue"></i>
+                    <input type="text" class="pull-right text-right" value="2.50" />
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                <label for="" class="pull-left text-left">Marketing</label>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <i class="fa fa-usd formIcon"></i>
+                    <p type="text" class="pull-right text-right" value="">16,250.00</p>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="row  total-div">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <label for="" class="pull-left text-left text-black">Total Developer Cost</label>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <i class="fa fa-usd formIcon text-blue"></i>
+                        <p type="text" class="pull-right text-right text-black" value="">496963.27</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row pad-10">
+                <div class="row pull-right">
+                    <a class="text-red reset-link cursor-pointer" style="margin-right:15px;">Reset Values</a>
+                    <button class="btn btn-default feasable-btn-blue"> Submit </button>
+                </div>
+            </div>
+         </div>
+         <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  text-right revenue-form-layout">
+             <div class="row pad-10">
+                <label for="" >Total Profit</label> <br/>
+                <label for="" class="revenue-result">$153,063.73</label>
+            </div>
+            <div class="row pad-10">
+                <label for="" >Developer Margin</label> <br/>
+                <label for="" class="revenue-result">30.79%</label>
+            </div>
+            <div class="row pad-10">
+                <label for="" >Residual Value of Land</label> <br/>
+                <label for="" class="revenue-result">$226,228.39</label>
+            </div>
+            <div class="row pad-10">
+                <label for="" >Total Project Revenue</label> <br/>
+                <label for="" class="revenue-result">$612,146.91</label>
+            </div>
+            <div class="row pad-10">
+                <label for="" >You should pay no more than</label> <br/>
+                <label for="" class="revenue-result">$853,692.05</label>
+            </div>
+         </div>
+    </div>
+</div>

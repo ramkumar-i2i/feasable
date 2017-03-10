@@ -1,0 +1,19 @@
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="header" class="row">
+        <div class="header-container col-lg-12 col-md-12 col-sm-12 col-xs-12"
+            ng-include="'app/landing/views/header.html'">
+        </div>
+    </div>
+    <div id="content" adjust-content-height class="row content">
+        <div class="main-content" ng-controller="SideMenuController as menuCtrl">
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 sideMenu" id="sideMenu"
+                ng-include="'app/sideMenu/views/sideMenu.html'" adjust-height>
+            </div>
+            <!-- <div id="sideMenu" class="menu-container"
+                ></div> -->
+            <div class="content-container col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <div ui-view></div>
+            </div>
+        </div>
+    </div>
+</div>
